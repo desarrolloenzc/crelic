@@ -1,0 +1,33 @@
+﻿<Window x:Class="crelic.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:crelic"
+        mc:Ignorable="d"
+        Height="706" Width="800" WindowStyle="None" AllowsTransparency="True" Background="Transparent" ResizeMode="NoResize">
+
+
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="45"></WindowChrome>
+    </WindowChrome.WindowChrome>
+
+    <Border CornerRadius="5" BorderThickness="2" Background="#333" BorderBrush="#444">
+        <Grid Margin="5,5,5,2">
+            <StackPanel WindowChrome.IsHitTestVisibleInChrome="True" Height="45" VerticalAlignment="Top" Orientation="Horizontal" Margin="80,15,82,0">
+                <Label Margin="0,0,0,1" FontSize="28" FontFamily="Impact" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#F4F0E6" 
+                       Content="Climate Resilient Local Infrastructure Centre (CReLIC)" Width="776"/>
+                <!-- <Image Margin="5,5,0,5" Source="C:\Users\william\Desktop\visual studio\MadMail\MadMail\img\mail.ico"></Image> -->
+
+            </StackPanel>
+
+            <Frame Background="#555" NavigationUIVisibility="Hidden" Name="MainFrame" Margin="0,79,0,55" />
+
+            <StackPanel  VerticalAlignment="Bottom" HorizontalAlignment="Right" Orientation="Horizontal" Height="50" Width="786" RenderTransformOrigin="0.378,0.42" >
+                <Button x:Name="QuitBtn" Click="QuitBtn_Click" Width="99" Height="40" Padding="10" Margin="355,5,0,5"  BorderThickness="0" Content="Exit" RenderTransformOrigin="7.467,-11.675"  />
+            </StackPanel>
+
+
+        </Grid>
+    </Border>
+</Window>
