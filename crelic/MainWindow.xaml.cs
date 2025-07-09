@@ -57,7 +57,7 @@ namespace crelic
             ComprobarAdministracion();
 
             DirectoryInfo parentDirectory = Directory.GetParent(pathBbdd);
-            pathBbdd = parentDirectory.FullName + "\\Database\\database.xlsx";
+            pathBbdd = parentDirectory.FullName + "\\database.xlsx";
         }
 
         private void QuitBtn_Click(object sender, RoutedEventArgs e)
